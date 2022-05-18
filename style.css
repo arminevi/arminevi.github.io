@@ -1,0 +1,95 @@
+/* 'yarn encore dev-server' to work  */
+:root{
+     --gummetal: rgb(34, 56, 67);
+     --cultured: rgb(239, 241, 243);
+     --light-grey: rgb(219, 211, 216);
+     --tumbleweed: rgb(216, 180, 160);
+     --wintergreen: rgb(111, 146, 131);
+}
+body{
+     background-color: var(--gummetal);
+}
+.section{
+     padding-top: 5%;
+}
+.links--content{
+     width: 560px;
+     height: 560px;
+}
+.rechts--image{
+     width: 560px;
+     height: 560px;
+}
+.arrow{
+     
+}
+.arrow:hover{
+    transition: 0.2s;
+    transform: translateX(3px) translateY(-3px);
+     width: -webkit-fit-content;
+}
+.idcard{
+     background-color: var(--light-grey);
+     border-radius: 50px;
+}
+.row{
+     padding: 50px;
+     transition: 0.5s;
+}
+.textbg{
+     color: var(--cultured);
+}
+.mail{
+     display: flex;
+     justify-content: flex-end;
+}
+.section-portfolio{
+     background-color: var(--tumbleweed);
+     margin-top: 50px;
+}
+.center{
+     display: flex;
+     justify-content: center;
+}
+.card{
+     width: 30rem;
+}
+footer{
+     margin-top:auto; 
+}
+.footer-header{
+     color:var(--cultured);
+}
+.fadeInLeft{
+     -webkit-animation: fadeInLeft 1.2s both;
+     -moz-animation: fadeInLeft 1.2s both;
+     -o-animation: fadeInLeft 1.2s both;
+     animation: fadeInLeft 1.2s both;
+}
+.fadeInRight{
+     -webkit-animation: fadeInRight 1.2s both;
+     -moz-animation: fadeInRight 1.2s both;
+     -o-animation: fadeInRight 1.2s both;
+     animation: fadeInRight 1.2s both;
+}
+.fade-in{
+     opacity: 0;
+     transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+     opacity: 1;
+}
+.from-left{
+     transform: translateX(-50%);
+}
+.from-right{
+     transform: translateX(50%);
+}
+.from-left,
+.from-right {
+     transition: transform 400ms ease-in;
+}
+.from-left.appear,
+.from-right.appear {
+     transform: translateX(0);
+}
